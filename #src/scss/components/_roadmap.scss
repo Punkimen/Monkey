@@ -1,0 +1,270 @@
+.roadmap {
+  padding: 100px 0 100px;
+
+  @media(max-width:$md4) {
+    padding: 50px 0 0px;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 300px;
+
+    @media(max-width:$md2) {
+      margin-bottom: 50px;
+    }
+
+    @media(max-width:$md3) {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+.roadmap-content {
+  position: relative;
+
+  @media(max-width: $md3) {
+    padding: 100px 0 0 70px;
+  }
+
+  &__top {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__line {
+    margin: 50px 0;
+    height: 1px;
+    background: rgb(212, 246, 61);
+    background: linear-gradient(90deg, rgba(212, 246, 61, 1) 0%, rgba(134, 36, 236, 1) 100%);
+
+    .roadmap-content__wrapper {
+      min-height: auto;
+    }
+
+    @media(max-width:$md3) {
+      position: absolute;
+      width: 1px;
+      height: calc(100% - 360px);
+      left: 25px;
+      bottom: 0;
+      top: 0;
+
+      .roadmap-content__wrapper {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .roadmap-content__col {
+        &:last-child {
+          height: 0;
+          min-height: 0;
+        }
+      }
+    }
+
+  }
+
+  &__num {
+    position: relative;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background: #1B1B1B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    @media(max-width:$md3) {
+      transform: translateY(0%);
+      transform: translateX(50%);
+    }
+
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #1B1B1B;
+      z-index: -1;
+      border-radius: 50%;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(91.51deg, #D4F63D 0%, #8624EC 98.9%);
+      filter: blur(4px);
+      z-index: -2;
+      border-radius: 50%;
+    }
+
+    &_active {
+      font-size: 0;
+
+      &::after {
+        content: url(../img/check.svg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      &::before {
+        background: #2C7925;
+      }
+    }
+  }
+
+  &__bottom {
+    position: relative;
+    z-index: 2;
+
+    .roadmap-list {
+      bottom: auto;
+      top: 0;
+    }
+  }
+
+  &__wrapper {
+    min-height: 236px;
+    align-items: end;
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr 1fr;
+
+    @media(max-width:$md2) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    @media(max-width:$md3) {
+      display: block;
+      min-height: auto;
+    }
+  }
+
+  &__col {
+    height: 100%;
+    position: relative;
+
+    &:last-child {
+      .roadmap-list__elem {
+        white-space: normal;
+      }
+    }
+
+    @media(max-width:$md3) {
+      min-height: 50px;
+    }
+  }
+
+  &__tree {
+    display: block;
+    position: absolute;
+    left: 18%;
+    top: -25%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: auto;
+
+    @media(max-width:$md2) {
+      display: none;
+    }
+  }
+
+}
+
+.roadmap-list {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  @media(max-width: $md3) {
+    position: relative;
+    margin-bottom: 50px;
+    padding-top: 20px;
+  }
+
+  &__elem {
+    white-space: nowrap;
+    position: relative;
+    padding-left: 42px;
+
+    @media(max-width:$md3) {
+      white-space: normal;
+    }
+
+
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__elem-marker {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #1B1B1B;
+      z-index: -1;
+      border-radius: 50%;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(91.51deg, #D4F63D 0%, #8624EC 98.9%);
+      filter: blur(4px);
+      z-index: -2;
+      border-radius: 50%;
+    }
+
+    &_active {
+      font-size: 0;
+
+      &::after {
+        content: url(../img/check.svg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      &::before {
+        background: #2C7925;
+      }
+    }
+  }
+
+  &__elem-text {}
+}

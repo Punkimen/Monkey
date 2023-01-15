@@ -1,0 +1,92 @@
+.footer {
+  padding-bottom: 100px;
+
+  @media(max-width: $md4) {
+    padding-bottom: 45px;
+    background-image: url(../img/bg_footer.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    @media(max-width: $md2) {
+      display: grid;
+      grid-template-columns: auto 1fr 1fr;
+      gap: 50px 20px;
+    }
+
+    @media(max-width: $md4) {
+      display: block;
+    }
+  }
+
+  &__logo {
+    @media(max-width: $md4) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__col {
+    @media(max-width: $md2) {
+      &:nth-child(4) {
+        grid-column: 1/3;
+      }
+    }
+
+    @media(max-width: $md4) {
+      &:not(:last-child) {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  &__label {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+    @media(max-width: $md4) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__nav {
+    display: flex;
+
+    @media(max-width: $md4) {
+      display: block;
+    }
+  }
+
+  &__socials {
+    display: flex;
+
+    .footer-link {
+      &:not(:last-child) {
+        margin-right: 12px;
+
+        @media(max-width: $md4) {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  &__btn {}
+}
+
+.footer-link {
+
+  &:not(:last-child) {
+    margin-right: 12px;
+
+    @media(max-width: $md4) {
+      display: block;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+}

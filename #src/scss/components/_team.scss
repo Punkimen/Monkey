@@ -1,0 +1,133 @@
+.team {
+  padding: 192px 0 220px;
+  position: relative;
+
+  @media(max-width: $md4) {
+    padding: 100px 0 50px;
+  }
+
+  &__decor {
+    position: absolute;
+    left: 0;
+    top: 141px;
+    transform: translateY(-50%);
+    max-width: 550px;
+    width: 50%;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+
+  &__slider {
+    width: 100%;
+    display: flex;
+
+    .swiper-wrapper {
+      padding-bottom: 50px;
+      justify-content: space-between;
+    }
+  }
+}
+
+
+.team-item {
+
+  &__photo {
+    // width: 246px;
+    // height: 246px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &_1 {}
+
+  &_2 {
+    .team-item__descr {
+      background: linear-gradient(92.3deg, #014069 5%, #0C659F 50.81%, #024875 96.05%);
+    }
+  }
+
+  &_3 {
+    .team-item__descr {
+      background: linear-gradient(92.3deg, #FA7070 5%, #EA7F82 50.81%, #CE5B5F 96.05%);
+    }
+  }
+
+  &_4 {
+    .team-item__descr {
+      background: linear-gradient(92.3deg, #190E1C 5%, #2E2852 50.81%, #271525 96.05%);
+    }
+  }
+
+  &_5 {
+    .team-item__descr {
+      background: linear-gradient(92.3deg, #1C1063 5%, #3927A3 50.81%, #1D106A 96.05%);
+    }
+  }
+
+  &__descr {
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(92.3deg, #024440 5%, #106B64 50.81%, #00403A 96.05%);
+    border-radius: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+
+    @media(max-width: $md4) {
+      font-size: 18px;
+      padding: 10px 20px;
+    }
+
+    span {
+      white-space: nowrap;
+
+      &:not(:last-child) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &::after {
+          content: '|';
+          display: block;
+          margin: 0 20px;
+
+          @media(max-width: $md4) {
+            margin: 0 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: rgba(#fff, .5);
+
+  &.swiper-pagination-bullet-active {
+    background: rgba(#8624EC, 1);
+  }
+}

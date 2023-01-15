@@ -1,0 +1,107 @@
+.nft {
+  padding: 150px 0 100px;
+
+  @media(max-width:$md4) {
+    padding: 50px 0 50px;
+  }
+
+  &__title {
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto 40px;
+    position: relative;
+
+    @media(max-width:$md5) {
+      margin-bottom: 25px;
+    }
+
+    &::after {
+      content: url(../img/plant.png);
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(42%, -53%);
+
+      @media(max-width:$md5) {
+        transform: translate(45%, -60%);
+      }
+    }
+  }
+
+  &__text {
+    max-width: 670px;
+    width: 100%;
+    margin: 0 auto 120px;
+    text-align: center;
+
+    @media(max-width:$md2) {
+      margin-bottom: 40px;
+    }
+
+    @media(max-width:$md5) {
+      text-align: justify;
+    }
+  }
+
+  &__collect {
+    padding-top: 67px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    overflow-x: auto;
+
+    @media(max-width: $md4) {
+      gap: 15px;
+    }
+  }
+
+  &__collect-item {
+    position: relative;
+  }
+}
+
+.nft-item {
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 50px 30px 42px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 220px;
+
+  @media(max-width:$md2) {
+    padding: 50px 15px 20px;
+  }
+
+  &__img {
+    height: 268px;
+    margin-top: -46%;
+    position: relative;
+
+    @media(max-width:$md2) {
+      height: 200px;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__content {
+    padding-top: 28px;
+    flex-grow: 1;
+  }
+
+  &__name {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 19px;
+  }
+
+  &__descr {}
+}

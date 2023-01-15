@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Sans+Condensed&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="page-container">
+        @@include('components/_header.html')
+        <main class="main">
+            @@include('components/_hero.html')
+            @@include('components/_about.html')
+            @@include('components/_tokemoniks.html')
+            @@include('components/_partners.html')
+            @@include('components/_nft.html')
+            @@include('components/_roadmap.html')
+            @@include('components/_team.html')
+        </main>
+        @@include('components/_footer.html')
+    </div>
+    <div id="modal-copyed" class="notification">
+        <div class="notification__icon">
+            <img src="img/check.svg" alt="checked">
+        </div>
+        <div class="notification__text">Copied!</div>
+    </div>
+    <div class="preloader">
+        <div class="preloader__row">
+            <div class="preloader__item"></div>
+            <div class="preloader__item"></div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

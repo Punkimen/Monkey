@@ -1,0 +1,163 @@
+.tokemoniks {
+  padding: 151px 0 100px;
+
+  @media(max-width:$md4) {
+    padding-top: 50px;
+  }
+
+  &__wrapper {
+    display: flex;
+    position: relative;
+  }
+
+  &__decor {
+    position: absolute;
+    top: 0;
+
+    @media(max-width:$md3) {
+      display: none;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__left {
+    top: -130px;
+    left: 0;
+    transform: translateX(-40%);
+    width: 50%;
+    top: 50%;
+    left: 0;
+    transform: translate(-40%, -32%);
+  }
+
+  &__right {
+    width: 50%;
+    top: 50%;
+    right: 0;
+    transform: translate(40%, -10%);
+  }
+
+  &__content {
+    position: relative;
+    z-index: 2;
+    max-width: 826px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 100px;
+
+    @media(max-width:$md4) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__copy {
+    display: flex;
+    margin-bottom: 100px;
+
+    @media(max-width:$md4) {
+      display: block;
+    }
+  }
+
+  &__copy-input {
+    display: block;
+    width: 100%;
+    background: none;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    margin-right: 25px;
+    color: #fff;
+    font-size: 20px;
+
+    @media(max-width:$md3) {
+      margin-right: 15px;
+    }
+
+    @media(max-width:$md4) {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__copy-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media(max-width:$md3) {
+      padding: 20px;
+    }
+
+    @media(max-width:$md4) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__statistic {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 40px;
+
+    @media(max-width:$md4) {
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 40px 20px;
+    }
+  }
+
+  &__col {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__progress {
+    position: relative;
+    height: 367px;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    margin-bottom: 50px;
+    width: 30px;
+    overflow: hidden;
+
+    @media(max-width:$md4) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__progress-bar {
+    position: absolute;
+    bottom: -1px;
+    left: -1px;
+    right: 0;
+    width: calc(100% + 2px);
+    background: #000;
+    background: linear-gradient(91.51deg, #D4F63D 0%, #8624EC 98.9%);
+  }
+
+  &__statistic-percent {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  &__statistic-name {
+    text-align: center;
+  }
+
+}
+
+.container {}
+
+.section-title {}
