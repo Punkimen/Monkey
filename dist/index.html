@@ -15,13 +15,13 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="lazy" data-bg="img/noise_bg.png">
     <div class="page-container">
         <header class="header">
   <div class="container">
     <div class="header__wrapper">
       <a href="#" class="header__logo">
-        <img src="img/logo.svg" alt="Logo">
+        <img class="lazy" data-src="img/logo.png" alt="Logo">
       </a>
       <nav class="header__nav">
         <ul class="header__list">
@@ -79,7 +79,7 @@
     </div>
   </div>
 </header>
-<div class="mobile-menu">
+<div class="mobile-menu lazy" data-bg="img/noise_bg.png">
   <div class="mobile-menu__container container">
     <div class="mobile-menu__item">
       <h5 class="mobile-menu__label">to users
@@ -174,7 +174,7 @@
     </div>
   </div>
   <div class="mobile-menu__bg">
-    <img src="./img/mob_menu.png">
+    <img class="lazy" data-src="./img/mob_menu.png">
   </div>
 </div>
 
@@ -193,7 +193,7 @@
       <picture>
         <source media="(min-width: 768px)" srcset="./img/hero_monkey.png">
         <source media="(max-width: 768px)" srcset="./img/hero_monkey_mobile.png">
-        <img src="./img/hero_monkey.png">
+        <img class="lazy" data-src="./img/hero_monkey.png">
       </picture>
     </div>
   </div>
@@ -205,13 +205,13 @@
       <h2 class="about__title section-title">
         ABOUT
       </h2>
-      <img class="about__decor" src="./img/corall.png" alt="corall">
+      <img class="about__decor lazy" data-src="./img/corall.png" alt="corall">
     </div>
     <div class="about__wrapper">
       <div class="about__col">
         <div class="about__item">
           <h3 id="about-title" class="about__title-img">
-            <img src="img/mask-monkey.png" alt="M">
+            <img class="lazy" data-src="img/mask-monkey.png" alt="M">
           </h3>
         </div>
         <div class="about__item">
@@ -239,7 +239,7 @@
           thrown into another universe and by some miracle they remain alive. Having studied the area, they saw a new
           planet nearby and decided to land there. </div>
         <div class="about__item">
-          <img src="img/about_monkey.png" alt="monkey">
+          <img class="lazy" data-src="img/about_monkey.png" alt="monkey">
         </div>
       </div>
       <div class="about__col">
@@ -262,7 +262,7 @@
   <div class="container">
     <div class="tokemoniks__wrapper">
       <div class="tokemoniks__left tokemoniks__decor">
-        <img src="img/tokemoniks_corall_1.png" alt="corall">
+        <img class="lazy" data-src="img/tokemoniks_corall_1.png" alt="corall">
       </div>
       <div class="tokemoniks__content">
         <h2 class="tokemoniks__title section-title">Tokenomics</h2>
@@ -270,7 +270,7 @@
           <input id="token" type="text" readonly value="0xdb305f8b9B45c92a8e71637e4E8C7dcfF8054e1b"
             class="tokemoniks__copy-input">
           <button id="copy-token" class="tokemoniks__copy-btn btn">
-            <img src="img/copy.svg" alt="Copy">
+            <img class="lazy" data-src="img/copy.svg" alt="Copy">
             <span>Copy contract</span>
           </button>
         </div>
@@ -320,7 +320,7 @@
         </div>
       </div>
       <div class="tokemoniks__right tokemoniks__decor">
-        <img src="img/tokemoniks_corall_2.png" alt="corall">
+        <img class="lazy" data-src="img/tokemoniks_corall_2.png" alt="corall">
       </div>
     </div>
   </div>
@@ -331,25 +331,25 @@
     <h2 class="partners__title section-title">Partners</h2>
     <div class="partners__wrapper">
       <a href="#" class="partners-link">
-        <img src="img/partners/partner_1.png" alt="partner_1">
+        <img class="lazy" data-src="img/partners/partner_1.png" alt="partner_1">
       </a>
       <a href="#" class="partners-link">
-        <img src="img/partners/partner_2.png" alt="partner_2">
+        <img class="lazy" data-src="img/partners/partner_2.png" alt="partner_2">
       </a>
       <a href="#" class="partners-link">
-        <img src="img/partners/partner_3.png" alt="partner_3">
+        <img class="lazy" data-src="img/partners/partner_3.png" alt="partner_3">
       </a>
       <a href="#" class="partners-link">
-        <img src="img/partners/partner_4.png" alt="partner_4">
+        <img class="lazy" data-src="img/partners/partner_4.png" alt="partner_4">
       </a>
       <a href="#" class="partners-link">
-        <img src="img/partners/partner_5.png" alt="partner_5">
+        <img class="lazy" data-src="img/partners/partner_5.png" alt="partner_5">
       </a>
       <a href="#" class="partners-link">
-        <img src="img/partners/partner_6.png" alt="partner_6">
+        <img class="lazy" data-src="img/partners/partner_6.png" alt="partner_6">
       </a>
       <a href="#" class="partners-link">
-        <img src="img/partners/partner_7.svg" alt="partner_7">
+        <img class="lazy" data-src="img/partners/partner_7.svg" alt="partner_7">
       </a>
     </div>
   </div>
@@ -367,7 +367,7 @@
     <div class="nft__collect">
       <div class="nft__collect-item nft-item">
         <div class="nft-item__img">
-          <img src="./img/attributes/attr_1.png" alt="Elkanor">
+          <img class="lazy" data-src="./img/attributes/attr_1.png" alt="Elkanor">
         </div>
         <div class="nft-item__content">
           <h4 class="nft-item__name">Elkanor</h4>
@@ -378,7 +378,7 @@
       </div>
       <div class="nft__collect-item nft-item">
         <div class="nft-item__img">
-          <img src="./img/attributes/attr_2.png" alt="VIKI">
+          <img class="lazy" data-src="./img/attributes/attr_2.png" alt="VIKI">
         </div>
         <div class="nft-item__content">
           <h4 class="nft-item__name">VIKI</h4>
@@ -389,7 +389,7 @@
       </div>
       <div class="nft__collect-item nft-item">
         <div class="nft-item__img">
-          <img src="./img/attributes/attr_3.png" alt="ASTRO">
+          <img class="lazy" data-src="./img/attributes/attr_3.png" alt="ASTRO">
         </div>
         <div class="nft-item__content">
           <h4 class="nft-item__name">ASTRO</h4>
@@ -400,7 +400,7 @@
       </div>
       <div class="nft__collect-item nft-item">
         <div class="nft-item__img">
-          <img src="./img/attributes/attr_4.png" alt="SPARK">
+          <img class="lazy" data-src="./img/attributes/attr_4.png" alt="SPARK">
         </div>
         <div class="nft-item__content">
           <h4 class="nft-item__name">SPARK</h4>
@@ -411,7 +411,7 @@
       </div>
       <div class="nft__collect-item nft-item">
         <div class="nft-item__img">
-          <img src="./img/attributes/attr_5.png" alt="OGRE">
+          <img class="lazy" data-src="./img/attributes/attr_5.png" alt="OGRE">
         </div>
         <div class="nft-item__content">
           <h4 class="nft-item__name">OGRE</h4>
@@ -508,7 +508,7 @@
           </div>
           <div class="roadmap-content__col">
             <div class="roadmap-content__num">3</div>
-            <img class="roadmap-content__tree" src="img/tree.png" alt="tree">
+            <img class="roadmap-content__tree lazy" data-src="img/tree.png" alt="tree">
           </div>
           <div class="roadmap-content__col">
             <div class="roadmap-content__num">4</div>
@@ -548,7 +548,7 @@
 
             <section id="Team" class="team">
   <div class="team__decor">
-    <img src="img/plant_2.png" alt="decor">
+    <img class="lazy" data-src="img/plant_2.png" alt="decor">
   </div>
   <div class="container">
     <h2 class="team__title section-title">
@@ -558,7 +558,7 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide team-item team-item_1">
           <div class="team-item__photo">
-            <img src="./img/team/team_1.png" alt="avatar">
+            <img class="lazy" data-src="./img/team/team_1.png" alt="avatar">
           </div>
           <div class="team-item__descr">
             <span>Robert</span>
@@ -567,7 +567,7 @@
         </div>
         <div class="swiper-slide team-item team-item_2">
           <div class="team-item__photo">
-            <img src="./img/team/team_2.png" alt="avatar">
+            <img class="lazy" data-src="./img/team/team_2.png" alt="avatar">
           </div>
           <div class="team-item__descr">
             <span>Harry</span>
@@ -576,7 +576,7 @@
         </div>
         <div class="swiper-slide team-item team-item_3">
           <div class="team-item__photo">
-            <img src="./img/team/team_3.png" alt="avatar">
+            <img class="lazy" data-src="./img/team/team_3.png" alt="avatar">
           </div>
           <div class="team-item__descr">
             <span>George</span>
@@ -585,7 +585,7 @@
         </div>
         <div class="swiper-slide team-item team-item_4">
           <div class="team-item__photo">
-            <img src="./img/team/team_4.png" alt="avatar">
+            <img class="lazy" data-src="./img/team/team_4.png" alt="avatar">
           </div>
           <div class="team-item__descr">
             <span>Jacob</span>
@@ -594,7 +594,7 @@
         </div>
         <div class="swiper-slide team-item team-item_5">
           <div class="team-item__photo">
-            <img src="./img/team/team_5.png" alt="avatar">
+            <img class="lazy" data-src="./img/team/team_5.png" alt="avatar">
           </div>
           <div class="team-item__descr">
             <span>Oliver</span>
@@ -612,7 +612,7 @@
   <div class="container">
     <div class="footer__wrapper">
       <a href="#" class="logo footer__logo">
-        <img src="./img/logo.svg" alt="logo">
+        <img class="lazy" data-src="./img/logo.png" alt="logo">
       </a>
       <div class="footer__col">
         <h5 class="footer__label">to users</h5>
@@ -699,7 +699,7 @@
     </div>
     <div id="modal-copyed" class="notification">
         <div class="notification__icon">
-            <img src="img/check.svg" alt="checked">
+            <img class="lazy" data-="img/check.svg" alt="checked">
         </div>
         <div class="notification__text">Copied!</div>
     </div>
@@ -709,6 +709,7 @@
             <div class="preloader__item"></div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>

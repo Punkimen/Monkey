@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="lazy" data-bg="img/noise_bg.png">
     <div class="page-container">
         @@include('components/_header.html')
         <main class="main">
@@ -31,7 +31,7 @@
     </div>
     <div id="modal-copyed" class="notification">
         <div class="notification__icon">
-            <img src="img/check.svg" alt="checked">
+            <img class="lazy" data-="img/check.svg" alt="checked">
         </div>
         <div class="notification__text">Copied!</div>
     </div>
@@ -41,6 +41,7 @@
             <div class="preloader__item"></div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>

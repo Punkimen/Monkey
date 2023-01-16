@@ -7,8 +7,12 @@ window.onload = function () {
 	}, 500);
 };
 document.addEventListener("DOMContentLoaded", function () {
-	// main functions
+	// lazyload
+	const lazyLoadInstance = new LazyLoad({
+		// Your custom settings go here
+	});
 
+	// main functions
 	const addClass = (el, className) => {
 		el.classList.add(className);
 	};

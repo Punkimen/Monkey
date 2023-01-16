@@ -180,7 +180,6 @@ a {
 
 body {
   font-family: "IBM Plex Sans Condensed", sans-serif;
-  background: #1B1B1B;
   background: #1B1B1B url("../img/noise_bg.png") repeat-y;
   background-size: cover;
   font-weight: 400;
